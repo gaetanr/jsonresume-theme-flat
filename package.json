@@ -1,17 +1,23 @@
 {
-  "name": "jsonresume-theme-flat",
-  "version": "0.3.3",
-  "description": "A theme for JSON Resume",
-  "author": "Mattias Erming",
+  "name": "jsonresume-theme-fr_flat",
+  "version": "0.1.1",
+  "description": "Mattias Erming Flat theme for jsonresume translated in French",
+  "main": "index.js",
+  "scripts": {
+    "test": "fr_flat"
+  },
   "repository": {
     "type": "git",
-    "url": "http://github.com/erming/jsonresume-theme-flat"
+    "url": "git://github.com/gaetanr/jsonresume-theme-flat.git"
   },
-  "scripts": {
-    "start": "node serve"
+  "keywords": [
+    "french",
+    "flat"
+  ],
+  "author": "gaetanr",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/gaetanr/jsonresume-theme-flat/issues"
   },
-  "dependencies": {
-    "handlebars": "^2.0.0-alpha.4"
-  },
-  "license": "MIT"
+  "homepage": "https://github.com/gaetanr/jsonresume-theme-flat"
 }
