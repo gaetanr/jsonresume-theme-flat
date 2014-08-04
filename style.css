@@ -31,6 +31,9 @@ h4 {
 section {
 	margin-top: 30px;
 }
+ul ul li {
+	line-height: 1.5;
+}
 li {
 	line-height: 1.8;
 	list-style: none;
@@ -59,14 +62,33 @@ h4 span:first-child {
 	font-weight: bold;
 }
 .container {
-	max-width: 750px;
+	max-width: 900px;
 	padding: 0 30px;
 }
+.col-sm-4 {
+	margin-bottom:5px;
+}
+.col-sm-4 div.language{
+	font-weight: bold;
+}
 .col-sm-6 {
-	margin-bottom: 10px;
+	margin-bottom: 0;
+}
+.col-sm-6 h4 {
+	font-weight: bold;
 }
 .col-sm-12 h4 {
-	margin-top: 12px; 
+	margin-top:12px; 
+	font-size:15px;
+}
+.col-sm-12 h4:after {
+	content:" :";
+}
+.col-sm-12 h4.strike-through {
+	font-size:18px;
+}
+.col-sm-12 h4.strike-through:after {
+	display:none;
 }
 .col-sm-12 + .col-sm-12 {
 	margin-top: 30px;
@@ -115,6 +137,10 @@ h4 span:first-child {
 #publications .website a:before {
 	content: attr(href);
 }
+div.summary {
+	font-style: italic;
+	color: #666;
+}
 
 @media (min-width: 480px) {
 	.strike-through {
@@ -134,10 +160,11 @@ h4 span:first-child {
 		margin-top: -12px;
 	}
 	.strike-through span + span {
-		font-size: 14px;
-		margin-top: -10px;
+		font-size: 12px;
+		margin-top: 1px;
 		padding-left: 20px;
 		right: 0;
+		background: transparent;
 	}
 }
 @media (max-width: 768px) {
@@ -150,7 +177,7 @@ h4 span:first-child {
 		text-align: left;
 	}
 	#publications .website a:before {
-		content: "View publication";
+		content: "Voir les publications";
 	}
 }
 @media (max-width: 480px) {

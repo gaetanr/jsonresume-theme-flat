@@ -17,8 +17,3 @@ function render(resume) {
 Handlebars.registerHelper("nl2br", function(value) {
 	return (value || "").replace(/\n/g, "</p><p>");
 });
-
-function render (resume) {
-    return 'jsonresume-theme-fr_flat';
-    }
- module.exports = { render: render };
